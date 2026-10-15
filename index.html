@@ -5096,7 +5096,7 @@ void main() {
   #hud .plist { right: 8px; top: 84px; width: 46%; bottom: 168px; padding: 6px 8px 6px 4px; }
   #hud .plist button b { font-size: 9.5px; }
 }
-`,dl=new WeakMap;function Ft(s,e){dl.get(s)!==e&&(dl.set(s,e),s.textContent=e)}function Kt(s,e){s.addEventListener("pointerdown",t=>{t.button>0||(t.preventDefault(),t.stopPropagation(),e(t))}),s.addEventListener("click",t=>{t.detail===0&&e(t)})}const O8={downtown:"DOWNTOWN",chinatown:"CHINATOWN",northbeach:"NORTH BEACH",nob:"NOB HILL",russian:"RUSSIAN HILL",tenderloin:"TENDERLOIN",soma:"SOUTH OF MARKET",mission:"MISSION",western:"WESTERN ADDITION"};class H8{constructor(e,t,i,n,r,o){this.ms=i,this.ps=n,this.act=r;const a=document.createElement("style");a.textContent=j8,document.head.appendChild(a),e.innerHTML=`
+`,dl=new WeakMap;function Ft(s,e){dl.get(s)!==e&&(dl.set(s,e),s.textContent=e)}function Kt(s,e){s.addEventListener("pointerdown",t=>{t.button!==0&&t.button!==2||(t.preventDefault(),t.stopPropagation(),e(t))}),s.addEventListener("click",t=>{t.detail===0&&e(t)})}document.addEventListener("contextmenu",s=>{s.target?.closest?.("a")||(getSelection()?.toString()??"")!==""||s.preventDefault()});const O8={downtown:"DOWNTOWN",chinatown:"CHINATOWN",northbeach:"NORTH BEACH",nob:"NOB HILL",russian:"RUSSIAN HILL",tenderloin:"TENDERLOIN",soma:"SOUTH OF MARKET",mission:"MISSION",western:"WESTERN ADDITION"};class H8{constructor(e,t,i,n,r,o){this.ms=i,this.ps=n,this.act=r;const a=document.createElement("style");a.textContent=j8,document.head.appendChild(a),e.innerHTML=`
       <div class="veil"><img alt=""></div>
       <div class="bottom"></div>
       <div class="title">SAN FRANCISCO<small>APRIL 1906 · THE EARTHQUAKE AND THE FIRE</small></div>
